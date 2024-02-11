@@ -1,0 +1,98 @@
+<div class="flex px-4 py-3 align-center border-b">
+  <a href="/" class="flex items-center">
+    <img
+      ngSrc="/assets/logo-mark.svg"
+      width="32"
+      height="30"
+      alt="Modernize logo mark"
+      class="mr-4"
+    />
+    <img
+      ngSrc="/assets/logo-text.svg"
+      width="96"
+      height="10"
+      alt="Modernize logo text"
+      class="hidden sm:inline-block"
+    />
+  </a>
+  <div class="flex align-center ml-auto gap-4">
+    <form class="max-w-sm mx-auto relative">
+      <div
+        class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+      >
+        <ng-icon name="featherSearch"></ng-icon>
+      </div>
+      <input
+        type="text"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Search"
+      />
+    </form>
+    <button
+      type="button"
+      class="relative text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+    >
+      <ng-icon name="featherMessageSquare" size="20"></ng-icon>
+      <span class="sr-only">Messages</span>
+      <div
+        class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-blue-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900"
+      >
+        5
+      </div>
+    </button>
+    <img
+      tabindex='0' 
+      id="avatarButton"
+      type="button"
+      data-dropdown-toggle="userDropdown"
+      data-dropdown-placement="bottom-start"
+      class="w-10 h-10 rounded-full cursor-pointer focus:ring-4 focus:ring-blue-300 select-none"
+      src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      alt="User dropdown"
+    />
+
+    <!-- Dropdown menu -->
+    <div
+      id="userDropdown"
+      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+    >
+      <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+        <div>Bonnie Green</div>
+        <div class="font-medium truncate">name&#64;flowbite.com</div>
+      </div>
+      <ul
+        class="py-2 text-sm text-gray-700 dark:text-gray-200"
+        aria-labelledby="avatarButton"
+      >
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Settings</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Earnings</a
+          >
+        </li>
+      </ul>
+      <div class="py-1">
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+          >Sign out</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
